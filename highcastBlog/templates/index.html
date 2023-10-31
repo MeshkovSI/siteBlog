@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+
+<h2>Posts in my blog...</h2>
+
+<div class="posts">
+    <div class="post1 item">
+        <a href="/post"><img src="{% static '/img/MainPost.png' %}" class="main"></a>
+    </div>
+    <div class="post2 item">
+        <img src="{% static '/img/MangaBlock.png' %}" class="second">
+    </div>
+    <div class="coffee item">
+        <img src="{% static '/img/Coffee.png' %}" class="lil">
+    </div>
+    <div class="seeall item">
+        <img src="{% static '/img/seeall.png' %}" class="lil">
+    </div>
+</div>
+
+{% endblock %}

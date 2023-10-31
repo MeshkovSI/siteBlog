@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="nav_bar">
+            <ul>
+              <li><a href="/" id="logo">HIGHCAST</a></li>
+              <li><a href="/" id="bar">Main</a></li>
+              <li><a href="/about" id="bar">About</a></li>
+            </ul>
+        </div>
+        <hr width="90%" color="#1D1D1F" size="2px" />
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
+</html>
