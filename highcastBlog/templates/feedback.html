@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content%}
+
+<h2>{{ title }}</h2>
+
+<form action="{% url 'thanks_page' %}" method="POST">
+    {% csrf_token %}
+    <label for="full_name">Full Name</label>
+    <input name="full_name" id="full_name">
+    <br>
+    <br>
+    <label for="email">EMail</label>
+    <input type="email"  name="email" id="email">
+    <br>
+    <br>
+    <label for="feedback">Feedback</label>
+    <input name="feedback" id="feedback">
+    <br>
+    <br>
+    <p><input type="checkbox" name="checkbox" id="checkbox">Checked</p>
+    <button type="submit">Send</button>
+</form>
+
+{% endblock %}

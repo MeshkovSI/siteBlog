@@ -17,3 +17,4 @@ def about_page(request):
     title = "About"
     data = {"menu": MENU, "title": title}
     return render(request, "./about.html", context=data)
+
