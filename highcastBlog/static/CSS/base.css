@@ -120,6 +120,15 @@ a#bar {
     "post1 post1 coffee seeall";
 }
 
+.feedback {
+    width: 75%;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px; /* скругление углов блока */
+    padding: 16px; /* внутренние поля */
+    margin: 16px auto;
+}
+
 .post2 { grid-area: post2; }
 
 .post1 { grid-area: post1; }

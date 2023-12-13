@@ -19,8 +19,14 @@
     <input name="feedback" id="feedback">
     <br>
     <br>
-    <p><input type="checkbox" name="checkbox" id="checkbox">Checked</p>
     <button type="submit">Send</button>
 </form>
 
+{% for feedback in feedbacks %}
+    <div class="feedback">
+        <h3>{{ feedback.full_name }}</h3>
+        <p>{{ feedback.email }}</p>
+        <p>{{ feedback.feedback }}</p>
+    </div>
+{% endfor %}
 {% endblock %}
